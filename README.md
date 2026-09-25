@@ -180,5 +180,5 @@ Use `Ctrl+F5` to perform a hard refresh. The dashboard stylesheet includes a ver
 
 This is a development project. Before production use, database queries should consistently use prepared statements, input validation should be strengthened, and HTTPS should be enabled.
 =======
-# Locate-Med
->>>>>>> 6da9f061a90f18f145a12ebfe3f4e8387a0588dd
+
+
