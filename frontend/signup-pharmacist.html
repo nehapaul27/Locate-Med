@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pharmacy Sign Up</title>
+
+    <link rel="stylesheet" href="signup-pharmacist.css">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+</head>
+
+<body>
+
+    <div id="main">
+
+        <!-- HEADER -->
+        <div id="header">
+
+            <i class="ri-map-pin-line"></i>
+
+            <p>Locate Med</p>
+
+        </div>
+
+        <div id="fakeheader"></div>
+
+
+        <!-- PAGE -->
+        <div id="page">
+
+            <div id="container">
+
+
+                <!-- LEFT SECTION -->
+                <div id="left-section">
+
+                    <h1>Register Your Pharmacy</h1>
+
+                    <p class="subtitle">
+                        Join our network and reach more customers
+                    </p>
+
+
+                    <div id="benefits">
+
+
+                        <!-- BENEFIT 1 -->
+                        <div class="benefit-item">
+
+                            <i class="ri-store-2-fill"></i>
+
+                            <h3>
+                                Manage Your Store
+                            </h3>
+
+                            <p>
+                                Complete control over inventory and orders
+                            </p>
+
+                        </div>
+
+
+                        <!-- BENEFIT 2 -->
+                        <div class="benefit-item">
+
+                            <i class="ri-bar-chart-line-fill"></i>
+
+                            <h3>
+                                Grow Your Business
+                            </h3>
+
+                            <p>
+                                Reach customers searching for medicines
+                            </p>
+
+                        </div>
+
+
+                        <!-- BENEFIT 3 -->
+                        <div class="benefit-item">
+
+                            <i class="ri-shield-check-fill"></i>
+
+                            <h3>
+                                Secure Platform
+                            </h3>
+
+                            <p>
+                                Safe and trusted transaction system
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SECTION -->
+                <div id="right-section">
+
+                    <h2>Register Pharmacy</h2>
+
+
+                    <!-- SIGNUP FORM -->
+                    <form
+                        id="signup-form"
+                        action="../backend/register-pharmacist.php"
+                        method="POST"
+                    >
+
+
+                        <!-- OWNER NAME -->
+                        <div class="form-group">
+
+                            <label for="owner-name">
+                                Owner Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="owner-name"
+                                name="owner-name"
+                                placeholder="Enter owner name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- PHARMACY NAME -->
+                        <div class="form-group">
+
+                            <label for="pharmacy-name">
+                                Pharmacy Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="pharmacy-name"
+                                name="pharmacy-name"
+                                placeholder="Enter pharmacy name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- PHONE -->
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter phone number"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="form-group">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter password"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- CONFIRM PASSWORD -->
+                        <div class="form-group">
+
+                            <label for="confirm-password">
+                                Confirm Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="confirm-password"
+                                name="confirm-password"
+                                placeholder="Confirm password"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- LICENSE -->
+                        <div class="form-group">
+
+                            <label for="license">
+                                License Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="license"
+                                name="license"
+                                placeholder="Enter license number"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- ADDRESS -->
+                        <div class="form-group">
+
+                            <label for="address">
+                                Address
+                            </label>
+
+                            <input
+                                type="text"
+                                id="address"
+                                name="address"
+                                placeholder="Enter address"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- CITY -->
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="Enter city"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- PIN CODE -->
+                        <div class="form-group">
+
+                            <label for="pincode">
+                                Pin Code
+                            </label>
+
+                            <input
+                                type="text"
+                                id="pincode"
+                                name="pincode"
+                                placeholder="Enter pin code"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- LATITUDE -->
+                        <div class="form-group">
+
+                            <label for="latitude">
+                                Latitude
+                            </label>
+
+                            <input
+                                type="number"
+                                id="latitude"
+                                name="latitude"
+                                step="any"
+                                placeholder="Will be detected automatically"
+                                readonly
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- LONGITUDE -->
+                        <div class="form-group">
+
+                            <label for="longitude">
+                                Longitude
+                            </label>
+
+                            <input
+                                type="number"
+                                id="longitude"
+                                name="longitude"
+                                step="any"
+                                placeholder="Will be detected automatically"
+                                readonly
+                                required
+                            >
+
+                            <small
+                                class="form-hint"
+                                id="location-hint"
+                            >
+                                Your pharmacy location will be detected using GPS.
+                            </small>
+
+                        </div>
+
+
+                        <!-- GPS BUTTON -->
+                        <button
+                            type="button"
+                            id="get-location-btn"
+                        >
+
+                            <i class="ri-map-pin-line"></i>
+
+                            Detect Pharmacy Location
+
+                        </button>
+
+
+                        <!-- TERMS -->
+                        <div class="checkbox-group">
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                                required
+                            >
+
+                            <label for="terms">
+
+                                I agree to the
+
+                                <span>
+                                    Terms and Conditions
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- REGISTER BUTTON -->
+                        <button
+                            type="submit"
+                            class="btn-signup"
+                        >
+
+                            Register Pharmacy
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </button>
+
+                    </form>
+
+
+                    <!-- LOGIN -->
+                    <p class="login-link">
+
+                        Already have an account?
+
+                        <span
+                            onclick="window.location.href='login.html'"
+                        >
+                            Login
+                        </span>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- YOUR EXISTING JAVASCRIPT -->
+    <script src="index.js"></script>
+
+
+    <!-- GPS JAVASCRIPT -->
+    <script>
+
+    const signupForm =
+        document.getElementById('signup-form');
+
+    const latInput =
+        document.getElementById('latitude');
+
+    const lngInput =
+        document.getElementById('longitude');
+
+    const addressInput =
+        document.getElementById('address');
+
+    const cityInput =
+        document.getElementById('city');
+
+    const pincodeInput =
+        document.getElementById('pincode');
+
+    const locationHint =
+        document.getElementById('location-hint');
+
+    const locationBtn =
+        document.getElementById('get-location-btn');
+
+
+    // -----------------------------------------
+    // DETECT LOCATION
+    // -----------------------------------------
+
+    locationBtn.addEventListener('click', function () {
+
+        if (!navigator.geolocation) {
+
+            alert(
+                "GPS / location is not supported by your browser."
+            );
+
+            return;
+        }
+
+
+        locationBtn.disabled = true;
+
+        locationBtn.innerHTML = `
+            <i class="ri-loader-4-line"></i>
+            Detecting Location...
+        `;
+
+        locationHint.textContent =
+            "Getting your location...";
+
+
+        navigator.geolocation.getCurrentPosition(
+
+            async function (position) {
+
+                const latitude =
+                    position.coords.latitude;
+
+                const longitude =
+                    position.coords.longitude;
+
+
+                // -----------------------------------------
+                // FILL LATITUDE AND LONGITUDE
+                // -----------------------------------------
+
+                latInput.value = latitude;
+
+                lngInput.value = longitude;
+
+
+                locationHint.textContent =
+                    "Location detected. Finding address...";
+
+
+                try {
+
+                    // -----------------------------------------
+                    // REVERSE GEOCODING
+                    // -----------------------------------------
+
+                    const response = await fetch(
+                        `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&addressdetails=1`,
+                        {
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        }
+                    );
+
+
+                    if (!response.ok) {
+
+                        throw new Error(
+                            "Address lookup failed"
+                        );
+
+                    }
+
+
+                    const data =
+                        await response.json();
+
+
+                    if (!data.address) {
+
+                        throw new Error(
+                            "Address not found"
+                        );
+
+                    }
+
+
+                    const location =
+                        data.address;
+
+
+                    // -----------------------------------------
+                    // GET ADDRESS
+                    // -----------------------------------------
+
+                    const houseNumber =
+                        location.house_number || "";
+
+                    const road =
+                        location.road || "";
+
+                    const neighbourhood =
+                        location.neighbourhood ||
+                        location.suburb ||
+                        "";
+
+
+                    let fullAddress = "";
+
+
+                    if (houseNumber) {
+
+                        fullAddress +=
+                            houseNumber + ", ";
+
+                    }
+
+
+                    if (road) {
+
+                        fullAddress +=
+                            road + ", ";
+
+                    }
+
+
+                    if (neighbourhood) {
+
+                        fullAddress +=
+                            neighbourhood;
+
+                    }
+
+
+                    // Remove extra comma/space
+                    fullAddress =
+                        fullAddress
+                            .replace(/,\s*$/, "")
+                            .trim();
+
+
+                    // -----------------------------------------
+                    // GET CITY
+                    // -----------------------------------------
+
+                    const city =
+                        location.city ||
+                        location.town ||
+                        location.village ||
+                        location.municipality ||
+                        "";
+
+
+                    // -----------------------------------------
+                    // GET PINCODE
+                    // -----------------------------------------
+
+                    const pincode =
+                        location.postcode || "";
+
+
+                    // -----------------------------------------
+                    // FILL FORM
+                    // -----------------------------------------
+
+                    addressInput.value =
+                        fullAddress;
+
+                    cityInput.value =
+                        city;
+
+                    pincodeInput.value =
+                        pincode;
+
+
+                    // -----------------------------------------
+                    // SUCCESS
+                    // -----------------------------------------
+
+                    locationHint.textContent =
+                        "Location and address detected successfully ✓";
+
+                    locationHint.style.color =
+                        "green";
+
+
+                    locationBtn.disabled =
+                        false;
+
+                    locationBtn.innerHTML = `
+                        <i class="ri-check-line"></i>
+                        Location Detected
+                    `;
+
+                }
+
+
+                catch (error) {
+
+                    console.error(error);
+
+
+                    locationHint.textContent =
+                        "GPS detected, but address could not be found.";
+
+                    locationHint.style.color =
+                        "orange";
+
+
+                    locationBtn.disabled =
+                        false;
+
+                    locationBtn.innerHTML = `
+                        <i class="ri-map-pin-line"></i>
+                        Try Again
+                    `;
+
+
+                    alert(
+                        "Your GPS location was detected, " +
+                        "but we could not automatically find the address. " +
+                        "Please enter the address, city and pin code manually."
+                    );
+
+                }
+
+            },
+
+
+            // -----------------------------------------
+            // GPS ERROR
+            // -----------------------------------------
+
+            function (error) {
+
+                locationBtn.disabled =
+                    false;
+
+                locationBtn.innerHTML = `
+                    <i class="ri-map-pin-line"></i>
+                    Detect Pharmacy Location
+                `;
+
+
+                if (
+                    error.code ===
+                    error.PERMISSION_DENIED
+                ) {
+
+                    alert(
+                        "Location permission was denied. " +
+                        "Please allow location access and try again."
+                    );
+
+                }
+
+                else if (
+                    error.code ===
+                    error.POSITION_UNAVAILABLE
+                ) {
+
+                    alert(
+                        "Your location could not be determined. " +
+                        "Please try again."
+                    );
+
+                }
+
+                else if (
+                    error.code ===
+                    error.TIMEOUT
+                ) {
+
+                    alert(
+                        "Location request timed out. " +
+                        "Please try again."
+                    );
+
+                }
+
+                else {
+
+                    alert(
+                        "Unable to detect your location."
+                    );
+
+                }
+
+
+                locationHint.textContent =
+                    "Location could not be detected.";
+
+            },
+
+
+            {
+                enableHighAccuracy: true,
+
+                timeout: 15000,
+
+                maximumAge: 0
+            }
+
+        );
+
+    });
+
+
+    // -----------------------------------------
+    // CHECK BEFORE SUBMIT
+    // -----------------------------------------
+
+    signupForm.addEventListener(
+        'submit',
+        function (e) {
+
+            if (
+                !latInput.value ||
+                !lngInput.value
+            ) {
+
+                e.preventDefault();
+
+                alert(
+                    "Please detect your pharmacy location before registering."
+                );
+
+                return;
+            }
+
+
+            if (
+                !addressInput.value ||
+                !cityInput.value ||
+                !pincodeInput.value
+            ) {
+
+                e.preventDefault();
+
+                alert(
+                    "Please make sure the address, city and pin code are filled."
+                );
+
+                return;
+            }
+
+        }
+    );
+
+</script>
+
+</body>
+
+</html>

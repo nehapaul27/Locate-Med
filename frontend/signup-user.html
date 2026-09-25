@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign Up</title>
+    <link rel="stylesheet" href="signup-user.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <i class="ri-map-pin-line"></i>
+            <p>Locate Med</p>
+        </div>
+        <div id="fakeheader"></div>
+
+        <div id="page">
+            <div id="container">
+                <div id="left-section">
+                    <h1>Join Locate Med</h1>
+                    <p class="subtitle">Create your account to find medicines and pharmacies near you</p>
+                    
+                    <div id="benefits">
+                        <div class="benefit-item">
+                            <i class="ri-map-pin-2-fill"></i>
+                            <h3>Find Nearby Pharmacies</h3>
+                            <p>Locate medicines instantly around you</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="ri-shield-check-fill"></i>
+                            <h3>Secure & Safe</h3>
+                            <p>Your data is protected with us</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="ri-time-fill"></i>
+                            <h3>Real-time Updates</h3>
+                            <p>Get accurate information instantly</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="right-section">
+                    <h2>Create Account</h2>
+
+                    <form id="signup-form" action="../backend/register-user.php" method="POST">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <span>Terms and Conditions</span></label>
+                        </div>
+
+                        <button type="submit" class="btn-signup">
+                            Create Account
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </form>
+
+                    <p class="login-link">
+                        Already have an account? <span onclick="window.location.href='login.html'">Log in</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in </title>
+        <link rel="stylesheet" href="login.css">
+          <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+        
+</head>
+
+<body>
+    <div id="main">
+
+      <div id="left">
+        <p class="para" id="p1">FIND YOUR MEDICINES.</p>
+        <p class="para" id="p2">NEAR YOU.</p>
+        <p class="para" id="p3">INSTANTLY.</p>
+        <img src="landing page picture.png" alt="Description">
+      </div>
+
+      
+      <div id="right">
+
+        <p id="welcome">Welcome Back!</p>
+        <p id="welcome2">Log in to your account to find nearby pharmacies and medicines.</p>   
+        <p id="login-as">Login as</p>
+
+        <form id="login-form" action="../backend/login.php" method="POST">
+
+          <div class="button-group">
+            <input type="radio" id="simple-user" name="accountType" value="user" required>
+            <label class="user" for="simple-user"><i class="ri-user-fill"></i>Simple User</label>
+
+            <input type="radio" id="pharmacist" name="accountType" value="pharmacist">
+            <label class="user" for="pharmacist"><i class="ri-home-heart-line"></i>Pharmacist</label>
+            </div>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password (minimum 8 characters)" required>
+
+          <button type="submit">Log In</button>
+        </form>
+
+      </div>
+
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>
