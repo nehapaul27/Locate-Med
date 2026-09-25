@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Locate Med
 
 Locate Med is a PHP and MySQL web application for finding medicines at nearby pharmacies. Users can register, sign in, allow GPS access, search for a medicine, and view pharmacies with available stock. Pharmacists can register their pharmacy and manage medicine inventory.
